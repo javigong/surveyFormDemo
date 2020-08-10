@@ -1,5 +1,87 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="surveyFormDemo.css">
+</head>
+
 <div class="container">
     <header class="header">
-        <h1 id="title" class="text-center">Survey Form</h1>
+        <h1 id="title" class="text-center">Survey Form Demo</h1>
+        <p id="description" class="description text">
+            This survey is a demo
+        </p>
     </header>
+    <form id="survey-form">
+        <div>
+            <label id="name-label" for="name">Name</label>
+            <input type="name" name="name" id="name" class="form-control" placeholder="Name" required>
+        </div>
+        <div>
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="your@email.com" required>
+        </div>
+        <div>
+            <label id="number-label" for="age">Age</label>
+            <input type="number" min="10" max="99" name="age" id="age" class="form-control"
+                placeholder="Age (optional)">
+        </div>
+        <div>
+            <div>
+                <label for="dropdown">Choose and option:</label>
+            </div>
+            <select name="options1" id="dropdown" class="form-control">
+                <option value="">--Please choose an option--</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+                <option value="option4">Option 4</option>
+                <option value="option5">Option 5</option>
+                <option value="option6">Option 6</option>
+            </select>
+        </div>
+        <div>
+            <p>Select an option:</p>
+            <input type="radio" id="yes" name="options2" value="yes" checked>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="options2" value="no">
+            <label for="no">No</label>
+            <input type="radio" id="not-sure" name="options2" value="not-sure">
+            <label for="not-sure">Not sure</label>
+        </div>
+        <div>
+            <p>Select an option:</p>
+            <input type="radio" id="tech" name="options3" value="tech" checked>
+            <label for="tech">Tech</label>
+            <input type="radio" id="science" name="options3" value="science">
+            <label for="science">Science</label>
+            <input type="radio" id="design" name="options3" value="design">
+            <label for="design">Design</label>
+        </div>
+        <div>
+            <p>Select an option:</p>
+            <input type="checkbox" id="always" name="checkbox">
+            <label for="always">Always</label>
+        </div>
+        <div>
+            <input type="checkbox" id="sometimes" name="checkbox">
+            <label for="sometimes">Sometimes</label>
+        </div>
+        <div>
+            <input type="checkbox" id="almost-never" name="checkbox">
+            <label for="almost-never">Almost never</label>
+        </div>
+        <div>
+            <input type="checkbox" id="never" name="checkbox">
+            <label for="never">Never</label>
+        </div>
+        <div>
+            <p>Tell us more about you:</p>
+            <div>
+                <textarea id="comments" name="comment" placeholder="Add a comment"></textarea>
+            </div>
+        </div>
+        <div>
+            <button type="submit" id="submit" class="submit-button">
+                Submit
+            </button>
+        </div>
+    </form>
 </div>
